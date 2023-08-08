@@ -29,3 +29,17 @@
     else return false;
 })
 console.log(`eski`, oldCars); */
+
+// 2000 = 2010
+// const godCars = users.filter((v) => {
+//     if (v.year > 2000 && v.year <= 2010) return true;
+//     else return false;
+// })
+// console.log('yaxshi', godCars);
+
+// 2010 = 2022
+// const newCars = users.filter((v) => {
+//     if (v.year > 2010 && v.year <= 2022) return true;
+//     else return false;
+// })
+// console.log('yangi', newCars);
