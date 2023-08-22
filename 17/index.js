@@ -1,21 +1,39 @@
-//! Fibonacci
-// const fibonacci = (n) => {
-// 	if(n < 1) return 1;
-// 	else return fibonacci(n - 1) + fibonacci(n - 2);
-// }
-// console.log(fibonacci(5));
+//! Scope
+//? Global
+//? Block
+//? Functional scope
 
-// 1
-// f(4) + f(3)
-// 2
-// f(3) + f(2) + f(2) + f(1)
-// 3
-// f(2) + f(1) + f(1) + 1 + f(1) + 1 + f(1)
-// 4
-// f(2) + 4 * f(1) + 1 + 1
-// f(1) + f(0) + 4 * f(1) + 1 + 1
-// 5
-// 5 * f(1) + 2 + 1
-// 5 * (f(0) + f(-1)) + 2 + 1
-// 5 * (1 + 1) + 2 // 12 + 1 = 13
-// .
+//! 1
+// if (true) {
+//   let b = 10;
+//   window.a = 10;
+// }
+// console.log(a); // global
+// console.log(b); // local, block
+
+//! 2
+// function getData() {
+//   let a = 10;
+//   var b = 20;
+//   window.c = 30;
+// }
+// getData();
+// console.log(a); // block
+// console.log(b); // functional
+// console.log(c); // global
+
+//! var => functional scope
+//! let => block scope
+//! window, globalThis => global scope
+
+// console.log(globalThis); => JS 
+// console.log(window); => HTML
+// console.log(global); // => NodeJS
+
+//! Closure
+// let a = 10;
+// function getData() {
+// 	let a = 20
+// 	console.log(a); // {local: {a: 20}, global: {a : 10}}
+// }
+// getData();
